@@ -150,7 +150,7 @@ public class Basics {
         for (String word : words){
             ret = ret.append(word.charAt(0)); 
         }
-        
+
         return ret.toString();
     }
 
@@ -177,6 +177,10 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
+        
+         for (int i = 1; i < arr.length; i = i + 2){
+            current_sum = current_sum + arr[i]; 
+         }
 
         return current_sum;
     }
