@@ -146,6 +146,11 @@ public class Basics {
 
         // Fill in the rest of the body here
 
+        String[] words = to_split.split(" ", 7); 
+        for (String word : words){
+            ret = ret.append(word.charAt(0)); 
+        }
+        
         return ret.toString();
     }
 
